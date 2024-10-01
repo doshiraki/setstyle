@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Injector Settings</title>
+</head>
+<body>
+  <h1>Custom CSS Injector Settings</h1>
+  <form id="settings-form">
+    <label for="url-pattern">URL Pattern (use * as wildcard):</label><br>
+    <input type="text" id="url-pattern" name="url-pattern" placeholder="https://*.example.com/*" required><br><br>
+    
+    <label for="custom-css">Custom CSS:</label><br>
+    <textarea id="custom-css" name="custom-css" rows="10" cols="50" placeholder="body { background-color: lightblue; }"></textarea><br><br>
+    
+    <button type="submit">Save</button>
+  </form>
+
+  <script src="options.js"></script>
+</body>
+</html>
